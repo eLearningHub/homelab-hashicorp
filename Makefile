@@ -9,3 +9,6 @@ ping: .update
 
 play: .update
 	ansible-playbook -i ./ansible/inventory.yml -e "@./ansible/external-vars.yml" ./ansible/playbook.yml
+
+install:
+	ansible-galaxy install -r ./ansible/requirements.yml

@@ -1,0 +1,4 @@
+---
+- name: robertdebock.hashicorp
+  src: https://github.com/robertdebock/ansible-role-hashicorp.git
+  version: 3.3.1

@@ -1,4 +1,4 @@
-- name: My first play
+- name: Homelab Hashicorp
   hosts: homeservers
   tasks:
    - name: Ping my hosts
