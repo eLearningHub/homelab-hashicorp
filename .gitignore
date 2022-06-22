@@ -1,2 +1,2 @@
 *.secret
-inventory
+external-vars.yml

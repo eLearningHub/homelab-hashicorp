@@ -1,0 +1,5 @@
+server1_name: samsung
+server1_ip: 192.168.2.22
+server1_user: ${SERVER1_USER}
+server1_key: ${SERVER1_KEY}
+server1_sudo_pass: ${SERVER1_SUDO_PASS} 

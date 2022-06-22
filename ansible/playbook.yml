@@ -1,3 +1,10 @@
+- hosts: all
+  remote_user: root
+  vars:
+    favcolor: blue
+  vars_files:
+    - external-vars.yml
+
 - name: My first play
   hosts: homeservers
   tasks:
@@ -5,4 +12,4 @@
      ansible.builtin.ping:
    - name: Print message
      ansible.builtin.debug:
-       msg: Hello world
+       msg: Hello servers!
