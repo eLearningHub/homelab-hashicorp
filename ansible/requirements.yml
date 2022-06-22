@@ -1,4 +1,7 @@
 ---
 - name: robertdebock.hashicorp
-  src: https://github.com/robertdebock/ansible-role-hashicorp.git
   version: 3.3.1
+- name: robertdebock.core_dependencies
+  version: 2.1.10
+- name: robertdebock.vault
+  version: 4.7.2
