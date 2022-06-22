@@ -9,7 +9,7 @@
   roles:
     - role: robertdebock.core_dependencies
     - role: robertdebock.hashicorp
-    - role: robertdebock.vault
+    - role: robertdebock.vault # token stored in /root/.vault-token
       vault_show_unseal_information: yes
       vault_store_root_token: yes
       vault_make_backup: yes
