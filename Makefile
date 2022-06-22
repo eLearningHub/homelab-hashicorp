@@ -1,5 +1,7 @@
 list:
-	ansible -i ./ansible/inventory.yml homeservers --list
+	./scripts/update-inventory.sh
+	ansible -i ./ansible/inventory homeservers --list
 
 ping:
-	ansible -i ./ansible/inventory.yml homeservers -m ping
+	./scripts/update-inventory.sh
+	ansible -i ./ansible/inventory homeservers -m ping
