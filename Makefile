@@ -1,7 +1,11 @@
-list:
-	./scripts/update-inventory.sh
+.update:
+		./scripts/update-inventory.sh
+
+list: .update
 	ansible -i ./ansible/inventory homeservers --list
 
-ping:
-	./scripts/update-inventory.sh
+ping: .update
 	ansible -i ./ansible/inventory homeservers -m ping
+
+play: .update
+	ansible-playbook -i ./ansible/inventory ./ansible/playbook.yaml

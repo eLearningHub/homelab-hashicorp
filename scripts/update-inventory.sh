@@ -1,4 +1,4 @@
 #!/bin/bash
 
 source ansible-vars.secret
-envsubst  < ./ansible/inventory.yml > ./ansible/inventory
+envsubst  < ./ansible/inventory.yaml > ./ansible/inventory
