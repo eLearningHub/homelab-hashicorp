@@ -1,0 +1,9 @@
+homeservers:
+  hosts:
+    ${SERVER1_NAME}:
+      ansible_host: ${SERVER1_IP}
+      ansible_user: ${SERVER1_USER}
+      ansible_ssh_private_key_file: ${SERVER1_KEY} 
+      ansible_become: true 
+      ansible_become_user: root
+      ansible_sudo_pass: ${SERVER1_SUDO_PASS}
