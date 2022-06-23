@@ -87,6 +87,6 @@
       debug:
         var: adminpwd['stdout']
 
-    - name: Print ansible_ssh_host var
+    - name: Print Jenkins URL
       debug:
-        var: ansible_ssh_host
+        msg: "Jenkins URL http://{{ ansible_ssh_host }}:8080"
