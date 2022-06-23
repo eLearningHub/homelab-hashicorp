@@ -1,10 +1,17 @@
 ---
+- name: robertdebock.bootstrap
+  version: 6.0.3
+- name: robertdebock.core_dependencies
+  version: 2.1.10
 - name: robertdebock.hashicorp
   version: 3.3.1
 - name: robertdebock.core_dependencies
   version: 2.1.10
 - name: robertdebock.vault
   version: 4.7.2
+- name: robertdebock.nomad
+  version: 2.2.1
 - name: robertdebock.jenkins
   version: 4.1.2
 - name: robertdebock.java
+  version: 4.1.3
