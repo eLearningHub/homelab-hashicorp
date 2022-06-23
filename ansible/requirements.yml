@@ -5,3 +5,6 @@
   version: 2.1.10
 - name: robertdebock.vault
   version: 4.7.2
+- name: robertdebock.jenkins
+  version: 4.1.2
+- name: robertdebock.java
