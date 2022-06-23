@@ -1,0 +1,13 @@
+---
+# tasks file for nomad
+
+- name: install apt key for Debian
+  ansible.builtin.apt_key:
+    url: "https://apt.releases.hashicorp.com/gpg"
+    state: present
+    validate_certs: no
+
+- name: install repository for Debian
+  ansible.builtin.apt_repository:
+    repo: deb [arch={{ hashicorp_architecture_mapping }}] https://apt.releases.hashicorp.com {{ ansible_distribution_release }} main
+    state: present
